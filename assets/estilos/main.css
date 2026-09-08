@@ -154,3 +154,32 @@ body {
     background-color: #f8fafc;
     color: #0f172a;
 }
+
+/* Botón Ir Arriba (proporciones circulares simétricas) */
+#btn-up {
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    min-height: 46px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(13, 110, 253, 0.35) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+#btn-up[style*="display: block"] {
+    display: inline-flex !important;
+}
+
+#btn-up:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.45) !important;
+}
+
+#btn-up i {
+    font-size: 1.35rem;
+    line-height: 1;
+    display: inline-block;
+}

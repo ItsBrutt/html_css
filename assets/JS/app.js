@@ -65,7 +65,7 @@ $(function() {
     });
 
     $('#download-cv').on('click', function() {
-        const pdfUrl = 'assets/cv-arnaldo-morales.pdf';
+        const pdfUrl = 'assets/CV-arnaldoMorales_js.pdf';
         const $btn = $(this);
         const originalHtml = $btn.html();
         
@@ -83,7 +83,7 @@ $(function() {
                 const a = document.createElement('a');
                 a.style.display = 'none';
                 a.href = url;
-                a.download = 'CV_Arnaldo_Morales.pdf';
+                a.download = 'CV_Arnaldo_Morales_JS.pdf';
                 document.body.appendChild(a);
                 a.click();
                 
@@ -94,7 +94,7 @@ $(function() {
             })
             .catch(error => {
                 console.error('Error al descargar el CV:', error);
-                alert('No se pudo descargar el CV. Por favor verifica que el archivo "assets/cv-arnaldo-morales.pdf" exista en el proyecto.');
+                alert('No se pudo descargar el CV. Por favor verifica que el archivo "assets/CV-arnaldoMorales_js.pdf" exista en el proyecto.');
             })
             .finally(() => {
                 $btn.prop('disabled', false).html(originalHtml);
